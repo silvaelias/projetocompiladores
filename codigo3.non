@@ -1,0 +1,21 @@
+# Código 3: Blocos, Recursão e Parâmetros Opcionais
+
+# Declaração de uma função recursiva (fatorial)
+funcao numero fatorial [numero n] : [
+  se (n = 0) entao 1 senao (
+    n * fatorial[n - 1]
+  )
+].
+
+# Função com assinatura como parâmetro
+funcao numero aplicaOperador [funcao numero op[numero | numero] | numero x | numero y] : [
+  op[x | y]
+].
+
+# Função que combina blocos, declarações e expressões aninhadas
+>> funcao numero calcular [] : [
+  [
+    const numero valor := 0b110.  # Valor binário: 6
+    aplicaOperador[fatorial | valor | 0]
+  ]
+]

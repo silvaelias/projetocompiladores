@@ -1,0 +1,17 @@
+# Código 2: Funções Lambda e Alta Ordem
+
+# Este código demonstra o uso de lambdas, funções de alta ordem 
+# e operadores booleanos.
+
+funcao numero multiplica [numero x | numero y] : [x * y].
+
+funcao booleana compara [numero x | numero y] : [x > y].
+
+# Função de alta ordem que recebe outra função como parâmetro
+funcao numero aplica [funcao numero op [numero | numero] | numero x | numero y] : [
+  op[x | y]
+].
+
+>> funcao numero principal [] : [
+  aplica[lambda [a | b] : (a + b) | 8 | 12]
+]

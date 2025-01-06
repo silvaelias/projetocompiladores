@@ -1,0 +1,14 @@
+# Código 1: Operadores e Controle Condicional
+
+# Este código demonstra operadores aritméticos, relacionais e booleanos, 
+# além do controle condicional com "se...entao...senao".
+
+# Declaração de constantes em diferentes formatos
+const numero a := 0b1010.  # Valor binário: 10
+const numero b := 15.
+const numero c := 1,5.     # Número real
+
+# Função que utiliza controle condicional e operadores aritméticos
+>> funcao numero operacoes [] : [
+  se (a + b > c) entao (a * b) senao (b / c)
+]
