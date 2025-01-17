@@ -5,12 +5,12 @@ funcao numero fatorial [numero n] : [
   se (n = 0) entao 1 senao (
     n * fatorial[n - 1]
   )
-].
+]
 
 # Função com assinatura como parâmetro
 funcao numero aplicaOperador [funcao numero op[numero | numero] | numero x | numero y] : [
   op[x | y]
-].
+]
 
 # Função que combina blocos, declarações e expressões aninhadas
 >> funcao numero calcular [] : [
