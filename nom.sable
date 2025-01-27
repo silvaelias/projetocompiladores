@@ -1,0 +1,55 @@
+Package nom;
+
+Helpers
+ digito = ['0' .. '9'];
+ letras = ['A' .. 'Z'];
+ letrinha = ['a' .. 'z'];
+ especial = [128 .. 255];
+ espaco = ' ';
+ rc = 13;
+ nl = 10;
+ aspas= '"';
+ atr = ':=';
+ 
+Tokens
+ atribuicao = atr+;
+ expressao = ':';
+ funcao = '>>';
+ final = '.';
+ if = 'se';
+ elseif = 'senao';
+ entao = 'entao';
+ nao = 'nao';
+ e = 'e';
+ ou = 'ou';
+ id = 'ID';
+ bolean = '0b';
+ constante = 'const';
+ numero = digito+;
+ divint = '//';
+ divr = '/';
+ soma = '+';
+ menos = '-';
+ mult = '*';
+ virgula = ',';
+ comentario = '#';
+ par_esq = '(';
+ par_dir = ')';
+ cox_esq = '[';
+ cox_dir = ']';
+ iniciocomentario = '{-';
+ fimcomentario = '-}';
+ esp = especial+;
+ maior = '>';
+ menor = '<';
+ letra = (letras | letrinha)+;
+ vazio = (espaco | rc | nl | especial | aspas )+;
+ divisor = '|';
+ igual = ' = ';
+
+
+
+Ignored Tokens
+ vazio;
+
+
