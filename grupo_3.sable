@@ -1,4 +1,4 @@
-Package nom;
+Package nonneumann;
 
 Helpers
  digito = ['0' .. '9'];
